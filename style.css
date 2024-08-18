@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary: indianred;
+    --secondary: rgba(15, 10, 29, 0.849);
+    --light: #2f3640;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav1 {
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 2px 0 3px gray;
+    text-align: center;
+}
+
+.nav1 .left {
+    flex-basis: 50%;
+    letter-spacing: 1.5px;
+}
+
+.nav1 .left a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    margin: 0px 5px;
+}
+
+.right {
+    flex-basis: 50%;
+
+}
+
+.right i {
+    font-size: 20px;
+    margin: 0px 15px;
+    background-color: indianred;
+    padding: 8px;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    border-radius: 8px;
+}
+
+.nav1 .right i:hover {
+    transform: rotate(360deg);
+}
+
+.nav2 {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.nav2 .nav2-left,
+.nav2 .nav2-center,
+.nav2 .nav2-right {
+    flex-basis: 25%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.nav2 .nav2-left i {
+    margin-left: 15px;
+}
+
+.nav2 .nav2-center h1 {
+    color: indianred;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.nav2 .nav2-center h1 span {
+    color: rgba(15, 10, 29, 0.849);
+}
+
+.nav2 .nav2-center p {
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.nav2 .nav2-right i {
+    margin: 30%;
+}
+
+.nav3 {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+}
+
+.nav3 ul {
+    list-style: none;
+    text-align: center;
+
+
+}
+
+.nav3 ul li {
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    z-index: 99;
+}
+
+.nav3 ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    display: block;
+
+}
+
+.nav3 ul li a:hover {
+    color: var(--primary);
+}
+
+.nav3 ul li i {
+    color: var(--primary);
+    margin: 0px 5px;
+}
+
+.nav3 ul ul {
+    position: absolute;
+    top: 70px;
+    margin-left: 0;
+    display: none;
+
+}
+
+.nav3 ul ul li {
+    background-color: white;
+    border-bottom: 1px solid var(--primary);
+}
+
+.nav3 ul li:hover>ul {
+    display: block;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 20%, rgba(255, 255, 255, 0.2), );
+    ;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: top;
+
+
+
+    /* padding: 60px; */
+}
+
+.container button {
+    max-width: 500px;
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    padding: 2px;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 20px 0px;
+
+}
+
+.container button:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.container h3 {
+    max-width: 500px;
+    position: absolute;
+    top: 78%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-align: center;
+    padding: 1.5pxx;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-family: 'Akaya kanadaka', cursive;
+    margin: 20px 0px;
+}
+
+.Latest {
+    padding: 50px 100px;
+}
+
+.product-intro {
+    text-align: center;
+}
+
+.product-intro h1 {
+    margin-top: 300px;
+    color: var(--primary);
+    letter-spacing: 0.2rem;
+    font-weight: bolder;
+}
+
+.product-intro h1 span {
+    color: var(--secondary);
+}
+
+.product-intro p {
+    color: grey;
+    margin: 15px 0px;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin: 4rem 0;
+}
+
+.card-container .card {
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+
+}
+
+.card img {
+    width: 75%;
+    height: 130px;
+    transition: 0.7s ease-in-out;
+}
+
+.card i {
+    color: goldenrod;
+    margin: 10px 0px;
+}
+
+.card button {
+    color: wheat;
+    background-color: var(--secondary);
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.card:hover img,
+.card:hover h1 {
+    width: 100%;
+    color: var(--primary);
+    transform: rotate(360deg);
+}
+
+.card::before {
+    content: '20% off';
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+}
+
+.product-intr {
+    text-align: center;
+}
+
+.product-intr h1 {
+    margin-top: 3px;
+    color: var(--primary);
+    letter-spacing: 0.2rem;
+    font-weight: bolder;
+}
+
+.product-intr h1 span {
+    color: var(--secondary);
+}
+
+.product-intr p {
+    color: grey;
+    margin: 15px 0px;
+}
+
+/* .trends {
+    padding: 50px 100px;
+    background-color: rgba(0, 0, 0, #2f3640);
+}
+
+.trends .swiper-container {
+    width: 100%;
+    padding: 50px;
+}
+
+.trends.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.trends.swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 10px;
+} */
+footer {
+    background-color: var(--secondary);
+    color: white;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+footer div {
+    flex-basis: 30%;
+    padding: 2rem;
+}
+
+footer h1 {
+    letter-spacing: 0.5rem;
+}
+
+footer h1 span {
+    color: var(--primary);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer i {
+    /* background-color: var(--seco; */
+    cursor: pointer;
+    letter-spacing: 0.5rem;
+}
+
+#sidenav {
+    display: none;
+}
+
+#menubar {
+    display: none;
+}
+
+@media only screen and (max-width:769px) {
+    #sidenav {
+        display: block;
+    }
+
+    #menubar {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%);
+        z-index: 99;
+        background-color: var(--primary);
+        color: white;
+        font-size: 2rem;
+        padding: 20px 10px;
+        animation: animate 5s ease infinite;
+
+    }
+
+    @keyframes animate {
+        0% {
+            background-color: var(--secondary);
+
+        }
+
+        100% {
+            background-color: var(--primary);
+        }
+
+    }
+
+    #sidenav {
+        width: 0px;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: rgb(40, 78, 78);
+        display: block;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    #sidenav ul {
+        list-style: none;
+
+
+    }
+
+    #sidenav ul li {
+        display: block;
+        width: 200px;
+        position: relative;
+        z-index: 99;
+        margin: 10px 20px;
+    }
+
+    #sidenav ul li a {
+        text-decoration: none;
+        color: rgb(255, 253, 253);
+        font-weight: 500;
+        display: block;
+        font-size: 20px;
+        padding: 10px 20px;
+
+    }
+
+    #sidenav ul li a:hover {
+        color: var(--primary);
+    }
+
+    #sidenav ul li i {
+        color: white;
+        margin: 0px 5px;
+    }
+
+    #sidenav ul ul {
+        position: absolute;
+        top: 70px;
+        margin-left: 0;
+        display: none;
+
+    }
+
+    #sidenav ul ul li {
+        border-bottom:1px solid white;
+    }
+
+    #sidenav ul li:hover>ul {
+        display: block;
+    }
+
+    .nav1 {
+        position: relative;
+        z-index: 2;
+        background: white;
+    }
+
+    .right i {
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+
+    .nav2 {
+        width: 100%;
+        height: 80px;
+    }
+
+    .nav2 .nav2-left i {
+        margin-left: 0px;
+    }
+
+    .nav2 .nav2-center h1 {
+        /* color: indianred; */
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        /* font-weight: bold; */
+    }
+
+
+
+    .nav2 .nav2-center p {
+        color: gray;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .nav2 .nav2-right i {
+        margin: 0px 5%;
+    }
+
+    .nav3 {
+        display: none;
+    }
+
+    .featured {
+        background-attachment: fixed;
+    }
+
+    .Latest {
+        padding: 0px 50px;
+    }
+
+    .product-intro {
+        text-align: center;
+    }
+
+    .product-intro h1 {
+        margin-top: 300px;
+        color: var(--primary);
+        letter-spacing: 0.2rem;
+        font-weight: bolder;
+    }
+
+    .product-intro h1 span {
+        color: var(--secondary);
+    }
+
+    .product-intro p {
+        color: grey;
+        margin: 15px 0px;
+    }
+
+    .card-container {
+        margin: 2rem 0;
+    }
+
+    .card-container .card {
+        flex-basis: 100%;
+        padding: 0.8rem;
+        position: relative;
+        text-align: center;
+
+    }
+
+    .card img {
+        width: 75%;
+        height: 130px;
+        transition: 0.7s ease-in-out;
+    }
+
+    .card i {
+        color: goldenrod;
+        margin: 10px 0px;
+    }
+
+    .card button {
+        color: wheat;
+        background-color: var(--secondary);
+        border: none;
+        outline: none;
+        margin-top: 15px;
+        padding: 5px 20px;
+        cursor: pointer;
+    }
+
+    footer div {
+        flex-basis: 50%;
+        margin: 10px 0px;
+    }
+
+}
